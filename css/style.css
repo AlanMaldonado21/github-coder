@@ -34,3 +34,39 @@ header li{
 section img{
     width: 100%;
 }
+
+section{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section div:nth-child(1){
+  width: 50%;
+ }
+
+section div:nth-child(1) h1{
+   color: #6C4390;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 2.3rem;
+}
+
+section div:nth-child(1) p{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+ }
+
+ section div:nth-child(2) a{
+     background-color: #6C4390;
+     text-decoration: none;
+     padding: 15px;
+     border-radius: 5px;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ section div:nth-child(2) a:hover{
+     background-color: red;
+ }
