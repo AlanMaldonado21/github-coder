@@ -1,0 +1,41 @@
+// crear variable
+$color-blanco: #FAFAFAFA;
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+
+    nav {
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                margin: 5px;
+
+                a {
+                    color: $color-blanco;
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                  &:hover{
+                      color: yellow;
+                  }
+                }
+            }
+        }
+    }
+
+    
+
+    .plataforma {
+        a {
+            color: $color-blanco;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
