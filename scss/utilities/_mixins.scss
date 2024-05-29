@@ -1,0 +1,41 @@
+
+// MIXINS
+
+@mixin boton {
+    background-color: yellow;
+    padding: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+
+        &:hover{
+            background-color: blue;
+            color: white;
+        }
+}
+
+@mixin boton-1($color,$padding,$text-color,$border,$decoration){
+    background-color: $color;
+    padding: $padding;
+    color: $text-color;
+    border-radius: $border;
+    text-decoration: $decoration;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-botones{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    a:first-child{
+        @include boton-1(red,10px, black,60px , none );
+    }
+
+    a:last-child{
+        @include boton-1( blue,50px , green , 15px , none)
+    }
+
+
+}

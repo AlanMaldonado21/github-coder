@@ -95,10 +95,4 @@ main .section-main .container-img .empresa a:hover {
   color: white;
 }
 
-.section-botones {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
 /*# sourceMappingURL=style.css.map */
